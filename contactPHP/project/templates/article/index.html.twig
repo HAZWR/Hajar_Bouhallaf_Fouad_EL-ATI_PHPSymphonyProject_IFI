@@ -7,7 +7,7 @@
         <div class="col-md-10" style="-webkit-user-select: auto;">
           <section class="ct-page_title" style="-webkit-user-select: auto;">
             <div class="h1" style="-webkit-user-select: auto;">Blog</div>
-            <a href="{{ path('article_new') }}">Create new Article</a>
+            <a href="{{ path('article_new') }}">Créer un nouvel article</a>
             <div class="ct-page_title-content" style="-webkit-user-select: auto;"></div>
           </section>
         </div>
@@ -26,12 +26,11 @@
               <ul class="row blogGrid" id="blogGrid">
                 <li class="col-xs-12 col-sm-6 col-md-3 blog-inner" id="21">
                   <div class="imgHolder" onclick="location.href='/about-us/blog/case-studies/building-in-webcorpco-cms-8.stml'">
-                    <img alt={{article.titre}} class="grid-image img-responsive" src={{article.image}}>
                     <div class="description-box animateBottomName">
                       <p>{{ article.titre }}</p>
                         <td>
-                             <a href="{{ path('article_show', {'id': article.id}) }}">show</a>
-                             <a href="{{ path('article_edit', {'id': article.id}) }}">edit</a>
+                             <a href="{{ path('article_show', {'id': article.id}) }}">Afficher</a>
+                             <a href="{{ path('article_edit', {'id': article.id}) }}">Editer</a>
                         </td>
                     </div>
                   </div>

@@ -38,23 +38,6 @@ class Article
      */
     private $contenu;
 
-      /**
-      * @ORM\Column(type="string")
-      */
-     private $image;
-
-       public function getImage()
-                      {
-                          return $this->image;
-                      }
-
-                  public function setImage(string $image1)
-                      {
-                          $this->image = $image1;
-
-                          return $this;
-                      }
-
 
      /**
       * @ORM\Column(type="string", unique=true)
@@ -77,7 +60,6 @@ class Article
 
                      return $this;
                  }
-
 
     public function getId(): ?int
     {
@@ -129,5 +111,4 @@ class Article
 
                 return $this;
             }
-
 }
